@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projetOC:Systeme
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:projetOC="projetOC"
+    xsi:schemaLocation="projetOC projetOC.ecore">
+  <dispositif
+      xsi:type="projetOC:DA"
+      nom="_A"/>
+  <dispositif
+      xsi:type="projetOC:DA"
+      nom="_B"
+      typeA="DA_B"/>
+  <dispositif
+      xsi:type="projetOC:DE"
+      nom="_A"/>
+  <dispositif
+      xsi:type="projetOC:DE"
+      nom="_B"
+      typeD="DE_B"/>
+  <dispositif
+      xsi:type="projetOC:DE"
+      nom="_C"
+      piece="//@piece.2"
+      typeD="DE_C"/>
+  <dispositif
+      xsi:type="projetOC:DT"/>
+  <piece/>
+  <piece type="T2"/>
+  <piece type="T3"
+      dispositif="//@dispositif.4"/>
+</projetOC:Systeme>

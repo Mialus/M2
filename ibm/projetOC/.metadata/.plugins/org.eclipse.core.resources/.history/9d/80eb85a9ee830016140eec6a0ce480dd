@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="projetOC" nsURI="projetOC" nsPrefix="projetOC">
+  <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
+    <details key="invocationDelegates" value="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot"/>
+    <details key="settingDelegates" value="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot"/>
+    <details key="validationDelegates" value="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot"/>
+  </eAnnotations>
+  <eClassifiers xsi:type="ecore:EClass" name="DE" eSuperTypes="#//Dispositif">
+    <eOperations name="depart" eType="#//Piece"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="DT" eSuperTypes="#//Dispositif">
+    <eOperations name="charger"/>
+    <eOperations name="decharger"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="DA" eSuperTypes="#//Dispositif">
+    <eOperations name="arriver">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+        <details key="pre" value="self.piece->isEmpty()"/>
+      </eAnnotations>
+      <eParameters name="typePiece" eType="#//Piece"/>
+    </eOperations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Dispositif" abstract="true">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="piece" eType="#//Piece"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="supportPiece" upperBound="-1"
+        eType="#//TypePiece"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="TypePiece">
+    <eLiterals name="T1"/>
+    <eLiterals name="T2" value="1"/>
+    <eLiterals name="T3" value="2"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Piece">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="type" eType="#//TypePiece"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Systeme">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="dispositif" upperBound="-1"
+        eType="#//Dispositif" containment="true"/>
+  </eClassifiers>
+</ecore:EPackage>
