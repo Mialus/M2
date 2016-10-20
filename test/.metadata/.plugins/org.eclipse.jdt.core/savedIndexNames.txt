@@ -1,0 +1,10 @@
+INDEX VERSION 1.129+/afs/deptinfo-st.univ-fcomte.fr/users/pwargnie/M2/test/.metadata/.plugins/org.eclipse.jdt.core
+2616982369.index
+2524051603.index
+865554552.index
+274994048.index
+4288321192.index
+1492756011.index
+3901844741.index
+1959387418.index
+3093442803.index

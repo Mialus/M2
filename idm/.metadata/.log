@@ -1,0 +1,553 @@
+!SESSION 2016-09-12 15:34:21.845 -----------------------------------------------
+eclipse.buildId=4.6.0.I20160606-1100
+java.version=1.8.0_101
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=fr_FR
+Framework arguments:  -product org.eclipse.epp.package.modeling.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.modeling.product
+
+!ENTRY org.eclipse.papyrus.infra.gmfdiag.common 2 0 2016-09-12 15:49:01.606
+!MESSAGE Expansion model not loaded
+
+!ENTRY org.eclipse.papyrus.infra.gmfdiag.common 2 0 2016-09-12 15:49:01.740
+!MESSAGE 	The representation 'Flow Port As Label' references a element type that does not exist org.eclipse.papyrus.sysmldi.FlowPort_Label
+
+!ENTRY org.eclipse.papyrus.infra.gmfdiag.common 2 0 2016-09-12 15:49:01.745
+!MESSAGE 	The representation 'Verify Link' references a element type that does not exist org.eclipse.papyrus.sysmldi.Verify_Abstraction_Verify_Link
+
+!ENTRY org.eclipse.papyrus.infra.gmfdiag.common 2 0 2016-09-12 15:49:01.750
+!MESSAGE 	The representation 'Operation Border Item' references a element type that does not exist org.eclipse.papyrus.sysmldi.
+
+!ENTRY org.eclipse.papyrus.infra.gmfdiag.common 2 0 2016-09-12 15:49:01.754
+!MESSAGE 	The representation 'Constraint As Label' references a element type that does not exist org.eclipse.papyrus.sysmldi.Constraint_Label
+
+!ENTRY org.eclipse.papyrus.infra.gmfdiag.common 2 0 2016-09-12 15:49:01.762
+!MESSAGE 	The representation 'Class Port' references a element type that does not exist org.eclipse.papyrus.sysmldi.Class_Port
+
+!ENTRY org.eclipse.papyrus.infra.gmfdiag.common 2 0 2016-09-12 15:49:01.771
+!MESSAGE 	The representation 'Class ProxyPort' references a element type that does not exist org.eclipse.papyrus.sysmldi.Class_ProxyPort
+
+!ENTRY org.eclipse.papyrus.infra.gmfdiag.common 2 0 2016-09-12 15:49:01.778
+!MESSAGE 	The representation 'Class FullPort' references a element type that does not exist org.eclipse.papyrus.sysmldi.Class_FullPort
+
+!ENTRY org.eclipse.papyrus.infra.gmfdiag.common 2 0 2016-09-12 15:49:01.787
+!MESSAGE 	The representation 'ProxyPort As Label' references a element type that does not exist org.eclipse.papyrus.sysmldi.ProxyPort_Label
+
+!ENTRY org.eclipse.papyrus.infra.gmfdiag.common 2 0 2016-09-12 15:49:01.795
+!MESSAGE 	The representation 'FullPort As Label' references a element type that does not exist org.eclipse.papyrus.sysmldi.FullPort_Label
+
+!ENTRY org.eclipse.papyrus.infra.gmfdiag.common 2 0 2016-09-12 15:49:01.803
+!MESSAGE 	The representation 'References As Label' references a element type that does not exist org.eclipse.papyrus.sysmldi.Reference_label
+
+!ENTRY org.eclipse.papyrus.infra.gmfdiag.common 2 0 2016-09-12 15:49:01.812
+!MESSAGE 	The representation 'Parts As Label' references a element type that does not exist org.eclipse.papyrus.sysmldi.Part_label
+
+!ENTRY org.eclipse.papyrus.infra.gmfdiag.common 2 0 2016-09-12 15:49:01.820
+!MESSAGE 	The representation 'FlowProperty As Label' references a element type that does not exist org.eclipse.papyrus.sysmldi.FlowProperty_label
+
+!ENTRY org.eclipse.papyrus.infra.gmfdiag.common 2 0 2016-09-12 15:49:01.828
+!MESSAGE 	The representation 'Parameters As Label' references a element type that does not exist org.eclipse.papyrus.sysmldi.Parameter_label
+
+!ENTRY org.eclipse.papyrus.infra.gmfdiag.common 2 0 2016-09-12 15:49:01.880
+!MESSAGE Expansion model not loaded
+
+!ENTRY org.eclipse.papyrus.infra.gmfdiag.common 2 0 2016-09-12 15:49:01.889
+!MESSAGE 	The representation 'Flow Port As Icon' references a element type that does not exist org.eclipse.papyrus.sysmldi.FlowPort_Port_Shape
+
+!ENTRY org.eclipse.papyrus.infra.gmfdiag.common 2 0 2016-09-12 15:49:01.921
+!MESSAGE Expansion model not loaded
+
+!ENTRY org.eclipse.papyrus.infra.gmfdiag.common 2 0 2016-09-12 15:49:01.930
+!MESSAGE 	The representation 'ConstraintBlockProperty' references a element type that does not exist org.eclipse.papyrus.sysmldi.ConstraintPropertyComposite
+
+!ENTRY org.eclipse.papyrus.infra.gmfdiag.common 2 0 2016-09-12 15:49:01.938
+!MESSAGE 	The representation 'Border item that represents PropertyValue of SysML' references a element type that does not exist org.eclipse.papyrus.sysmldi.Parameter_BorderItem
+
+!ENTRY org.eclipse.papyrus.infra.gmfdiag.common 2 0 2016-09-12 15:49:01.950
+!MESSAGE 	The representation 'Constraint As Label' references a element type that does not exist org.eclipse.papyrus.sysmldi.Constraint_Label
+
+!ENTRY org.eclipse.papyrus.infra.gmfdiag.navigation 4 0 2016-09-12 16:06:29.970
+!MESSAGE Unexpected Error
+!STACK 0
+org.eclipse.papyrus.infra.core.services.ServiceNotFoundException: The resource set was not initialized as a service.
+	at org.eclipse.papyrus.infra.emf.utils.ServiceUtilsForResourceSet.getServiceRegistry(ServiceUtilsForResourceSet.java:44)
+	at org.eclipse.papyrus.infra.emf.utils.ServiceUtilsForResource.getServiceRegistry(ServiceUtilsForResource.java:65)
+	at org.eclipse.papyrus.infra.emf.utils.ServiceUtilsForEObject.getServiceRegistry(ServiceUtilsForEObject.java:43)
+	at org.eclipse.papyrus.infra.gmfdiag.navigation.ui.DiagramDynamicNavigate.getSelection(DiagramDynamicNavigate.java:122)
+	at org.eclipse.papyrus.infra.gmfdiag.navigation.ui.DiagramDynamicNavigate.fill(DiagramDynamicNavigate.java:47)
+	at org.eclipse.ui.internal.menus.DynamicMenuContributionItem.fill(DynamicMenuContributionItem.java:147)
+	at org.eclipse.jface.action.MenuManager.doItemFill(MenuManager.java:728)
+	at org.eclipse.jface.action.MenuManager.update(MenuManager.java:810)
+	at org.eclipse.jface.action.MenuManager.update(MenuManager.java:669)
+	at org.eclipse.gmf.runtime.common.ui.services.action.contributionitem.AbstractContributionItemProvider$PluginMenuManager.update(AbstractContributionItemProvider.java:1257)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRenderer.scheduleManagerUpdate(MenuManagerRenderer.java:1185)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRenderer.processContents(MenuManagerRenderer.java:648)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRenderer.subscribeTopicChildAdded(MenuManagerRenderer.java:319)
+	at sun.reflect.GeneratedMethodAccessor21.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:54)
+	at org.eclipse.e4.ui.internal.di.UIEventObjectSupplier$UIEventHandler$1.run(UIEventObjectSupplier.java:56)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:233)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:145)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:5406)
+	at org.eclipse.e4.ui.internal.workbench.swt.E4Application$1.syncExec(E4Application.java:211)
+	at org.eclipse.e4.ui.internal.di.UIEventObjectSupplier$UIEventHandler.handleEvent(UIEventObjectSupplier.java:53)
+	at org.eclipse.equinox.internal.event.EventHandlerWrapper.handleEvent(EventHandlerWrapper.java:201)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:197)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:148)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.dispatchEvent(EventAdminImpl.java:135)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.sendEvent(EventAdminImpl.java:78)
+	at org.eclipse.equinox.internal.event.EventComponent.sendEvent(EventComponent.java:39)
+	at org.eclipse.e4.ui.services.internal.events.EventBroker.send(EventBroker.java:94)
+	at org.eclipse.e4.ui.internal.workbench.UIEventPublisher.notifyChanged(UIEventPublisher.java:60)
+	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:374)
+	at org.eclipse.emf.ecore.util.EcoreEList.dispatchNotification(EcoreEList.java:249)
+	at org.eclipse.emf.common.notify.impl.NotifyingListImpl.addUnique(NotifyingListImpl.java:356)
+	at org.eclipse.emf.common.util.AbstractEList.add(AbstractEList.java:341)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ContributionRecord.mergeIntoModel(ContributionRecord.java:252)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRenderer.processAddition(MenuManagerRenderer.java:544)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRenderer.generateContributions(MenuManagerRenderer.java:523)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRenderer.processContributions(MenuManagerRenderer.java:491)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRenderer.processContributions(MenuManagerRenderer.java:494)
+	at org.eclipse.ui.internal.PopupMenuExtender.addMenuContributions(PopupMenuExtender.java:410)
+	at org.eclipse.ui.internal.PopupMenuExtender.menuAboutToShow(PopupMenuExtender.java:382)
+	at org.eclipse.jface.action.MenuManager.fireAboutToShow(MenuManager.java:339)
+	at org.eclipse.jface.action.MenuManager.handleAboutToShow(MenuManager.java:470)
+	at org.eclipse.jface.action.MenuManager.access$1(MenuManager.java:465)
+	at org.eclipse.jface.action.MenuManager$2.menuShown(MenuManager.java:497)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:256)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:5219)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1340)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1366)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1345)
+	at org.eclipse.swt.widgets.Menu._setVisible(Menu.java:198)
+	at org.eclipse.swt.widgets.Display.runPopups(Display.java:4595)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4133)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1121)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1022)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:150)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:687)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:604)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:138)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:673)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:610)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1519)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1492)
+
+!ENTRY org.eclipse.papyrus.infra.gmfdiag.navigation 4 0 2016-09-12 16:06:37.705
+!MESSAGE Unexpected Error
+!STACK 0
+org.eclipse.papyrus.infra.core.services.ServiceNotFoundException: The resource set was not initialized as a service.
+	at org.eclipse.papyrus.infra.emf.utils.ServiceUtilsForResourceSet.getServiceRegistry(ServiceUtilsForResourceSet.java:44)
+	at org.eclipse.papyrus.infra.emf.utils.ServiceUtilsForResource.getServiceRegistry(ServiceUtilsForResource.java:65)
+	at org.eclipse.papyrus.infra.emf.utils.ServiceUtilsForEObject.getServiceRegistry(ServiceUtilsForEObject.java:43)
+	at org.eclipse.papyrus.infra.gmfdiag.navigation.ui.DiagramDynamicNavigate.getSelection(DiagramDynamicNavigate.java:122)
+	at org.eclipse.papyrus.infra.gmfdiag.navigation.ui.DiagramDynamicNavigate.fill(DiagramDynamicNavigate.java:47)
+	at org.eclipse.ui.internal.menus.DynamicMenuContributionItem.fill(DynamicMenuContributionItem.java:147)
+	at org.eclipse.jface.action.MenuManager.doItemFill(MenuManager.java:728)
+	at org.eclipse.jface.action.MenuManager.update(MenuManager.java:810)
+	at org.eclipse.jface.action.MenuManager.update(MenuManager.java:669)
+	at org.eclipse.gmf.runtime.common.ui.services.action.contributionitem.AbstractContributionItemProvider$PluginMenuManager.update(AbstractContributionItemProvider.java:1257)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRenderer.scheduleManagerUpdate(MenuManagerRenderer.java:1185)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRenderer.processContents(MenuManagerRenderer.java:648)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRenderer.subscribeTopicChildAdded(MenuManagerRenderer.java:319)
+	at sun.reflect.GeneratedMethodAccessor21.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:54)
+	at org.eclipse.e4.ui.internal.di.UIEventObjectSupplier$UIEventHandler$1.run(UIEventObjectSupplier.java:56)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:233)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:145)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:5406)
+	at org.eclipse.e4.ui.internal.workbench.swt.E4Application$1.syncExec(E4Application.java:211)
+	at org.eclipse.e4.ui.internal.di.UIEventObjectSupplier$UIEventHandler.handleEvent(UIEventObjectSupplier.java:53)
+	at org.eclipse.equinox.internal.event.EventHandlerWrapper.handleEvent(EventHandlerWrapper.java:201)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:197)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:148)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.dispatchEvent(EventAdminImpl.java:135)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.sendEvent(EventAdminImpl.java:78)
+	at org.eclipse.equinox.internal.event.EventComponent.sendEvent(EventComponent.java:39)
+	at org.eclipse.e4.ui.services.internal.events.EventBroker.send(EventBroker.java:94)
+	at org.eclipse.e4.ui.internal.workbench.UIEventPublisher.notifyChanged(UIEventPublisher.java:60)
+	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:374)
+	at org.eclipse.emf.ecore.util.EcoreEList.dispatchNotification(EcoreEList.java:249)
+	at org.eclipse.emf.common.notify.impl.NotifyingListImpl.addUnique(NotifyingListImpl.java:356)
+	at org.eclipse.emf.common.util.AbstractEList.add(AbstractEList.java:341)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ContributionRecord.mergeIntoModel(ContributionRecord.java:252)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRenderer.processAddition(MenuManagerRenderer.java:544)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRenderer.generateContributions(MenuManagerRenderer.java:523)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRenderer.processContributions(MenuManagerRenderer.java:491)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRenderer.processContributions(MenuManagerRenderer.java:494)
+	at org.eclipse.ui.internal.PopupMenuExtender.addMenuContributions(PopupMenuExtender.java:410)
+	at org.eclipse.ui.internal.PopupMenuExtender.menuAboutToShow(PopupMenuExtender.java:382)
+	at org.eclipse.jface.action.MenuManager.fireAboutToShow(MenuManager.java:339)
+	at org.eclipse.jface.action.MenuManager.handleAboutToShow(MenuManager.java:470)
+	at org.eclipse.jface.action.MenuManager.access$1(MenuManager.java:465)
+	at org.eclipse.jface.action.MenuManager$2.menuShown(MenuManager.java:497)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:256)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:5219)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1340)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1366)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1345)
+	at org.eclipse.swt.widgets.Menu._setVisible(Menu.java:198)
+	at org.eclipse.swt.widgets.Display.runPopups(Display.java:4595)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4133)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1121)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1022)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:150)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:687)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:604)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:138)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:673)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:610)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1519)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1492)
+
+!ENTRY org.eclipse.papyrus.infra.gmfdiag.navigation 4 0 2016-09-12 16:08:39.482
+!MESSAGE Unexpected Error
+!STACK 0
+org.eclipse.papyrus.infra.core.services.ServiceNotFoundException: The resource set was not initialized as a service.
+	at org.eclipse.papyrus.infra.emf.utils.ServiceUtilsForResourceSet.getServiceRegistry(ServiceUtilsForResourceSet.java:44)
+	at org.eclipse.papyrus.infra.emf.utils.ServiceUtilsForResource.getServiceRegistry(ServiceUtilsForResource.java:65)
+	at org.eclipse.papyrus.infra.emf.utils.ServiceUtilsForEObject.getServiceRegistry(ServiceUtilsForEObject.java:43)
+	at org.eclipse.papyrus.infra.gmfdiag.navigation.ui.DiagramDynamicNavigate.getSelection(DiagramDynamicNavigate.java:122)
+	at org.eclipse.papyrus.infra.gmfdiag.navigation.ui.DiagramDynamicNavigate.fill(DiagramDynamicNavigate.java:47)
+	at org.eclipse.ui.internal.menus.DynamicMenuContributionItem.fill(DynamicMenuContributionItem.java:147)
+	at org.eclipse.jface.action.MenuManager.doItemFill(MenuManager.java:728)
+	at org.eclipse.jface.action.MenuManager.update(MenuManager.java:810)
+	at org.eclipse.jface.action.MenuManager.update(MenuManager.java:669)
+	at org.eclipse.gmf.runtime.common.ui.services.action.contributionitem.AbstractContributionItemProvider$PluginMenuManager.update(AbstractContributionItemProvider.java:1257)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRenderer.scheduleManagerUpdate(MenuManagerRenderer.java:1185)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRenderer.processContents(MenuManagerRenderer.java:648)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRenderer.subscribeTopicChildAdded(MenuManagerRenderer.java:319)
+	at sun.reflect.GeneratedMethodAccessor21.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:54)
+	at org.eclipse.e4.ui.internal.di.UIEventObjectSupplier$UIEventHandler$1.run(UIEventObjectSupplier.java:56)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:233)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:145)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:5406)
+	at org.eclipse.e4.ui.internal.workbench.swt.E4Application$1.syncExec(E4Application.java:211)
+	at org.eclipse.e4.ui.internal.di.UIEventObjectSupplier$UIEventHandler.handleEvent(UIEventObjectSupplier.java:53)
+	at org.eclipse.equinox.internal.event.EventHandlerWrapper.handleEvent(EventHandlerWrapper.java:201)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:197)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:148)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.dispatchEvent(EventAdminImpl.java:135)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.sendEvent(EventAdminImpl.java:78)
+	at org.eclipse.equinox.internal.event.EventComponent.sendEvent(EventComponent.java:39)
+	at org.eclipse.e4.ui.services.internal.events.EventBroker.send(EventBroker.java:94)
+	at org.eclipse.e4.ui.internal.workbench.UIEventPublisher.notifyChanged(UIEventPublisher.java:60)
+	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:374)
+	at org.eclipse.emf.ecore.util.EcoreEList.dispatchNotification(EcoreEList.java:249)
+	at org.eclipse.emf.common.notify.impl.NotifyingListImpl.addUnique(NotifyingListImpl.java:356)
+	at org.eclipse.emf.common.util.AbstractEList.add(AbstractEList.java:341)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ContributionRecord.mergeIntoModel(ContributionRecord.java:252)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRenderer.processAddition(MenuManagerRenderer.java:544)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRenderer.generateContributions(MenuManagerRenderer.java:523)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRenderer.processContributions(MenuManagerRenderer.java:491)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRenderer.processContributions(MenuManagerRenderer.java:494)
+	at org.eclipse.ui.internal.PopupMenuExtender.addMenuContributions(PopupMenuExtender.java:410)
+	at org.eclipse.ui.internal.PopupMenuExtender.menuAboutToShow(PopupMenuExtender.java:382)
+	at org.eclipse.jface.action.MenuManager.fireAboutToShow(MenuManager.java:339)
+	at org.eclipse.jface.action.MenuManager.handleAboutToShow(MenuManager.java:470)
+	at org.eclipse.jface.action.MenuManager.access$1(MenuManager.java:465)
+	at org.eclipse.jface.action.MenuManager$2.menuShown(MenuManager.java:497)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:256)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:5219)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1340)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1366)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1345)
+	at org.eclipse.swt.widgets.Menu._setVisible(Menu.java:198)
+	at org.eclipse.swt.widgets.Display.runPopups(Display.java:4595)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4133)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1121)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1022)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:150)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:687)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:604)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:138)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:673)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:610)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1519)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1492)
+
+!ENTRY org.eclipse.papyrus.infra.gmfdiag.navigation 4 0 2016-09-12 16:20:01.444
+!MESSAGE Unexpected Error
+!STACK 0
+org.eclipse.papyrus.infra.core.services.ServiceNotFoundException: The resource set was not initialized as a service.
+	at org.eclipse.papyrus.infra.emf.utils.ServiceUtilsForResourceSet.getServiceRegistry(ServiceUtilsForResourceSet.java:44)
+	at org.eclipse.papyrus.infra.emf.utils.ServiceUtilsForResource.getServiceRegistry(ServiceUtilsForResource.java:65)
+	at org.eclipse.papyrus.infra.emf.utils.ServiceUtilsForEObject.getServiceRegistry(ServiceUtilsForEObject.java:43)
+	at org.eclipse.papyrus.infra.gmfdiag.navigation.ui.DiagramDynamicNavigate.getSelection(DiagramDynamicNavigate.java:122)
+	at org.eclipse.papyrus.infra.gmfdiag.navigation.ui.DiagramDynamicNavigate.fill(DiagramDynamicNavigate.java:47)
+	at org.eclipse.ui.internal.menus.DynamicMenuContributionItem.fill(DynamicMenuContributionItem.java:147)
+	at org.eclipse.jface.action.MenuManager.doItemFill(MenuManager.java:728)
+	at org.eclipse.jface.action.MenuManager.update(MenuManager.java:810)
+	at org.eclipse.jface.action.MenuManager.handleAboutToShow(MenuManager.java:472)
+	at org.eclipse.jface.action.MenuManager.access$1(MenuManager.java:465)
+	at org.eclipse.jface.action.MenuManager$2.menuShown(MenuManager.java:497)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:256)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:5219)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1340)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1366)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1345)
+	at org.eclipse.swt.widgets.Menu.gtk_show(Menu.java:711)
+	at org.eclipse.swt.widgets.Widget.windowProc(Widget.java:1949)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5484)
+	at org.eclipse.swt.internal.gtk.OS._g_main_context_iteration(Native Method)
+	at org.eclipse.swt.internal.gtk.OS.g_main_context_iteration(OS.java:2495)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4141)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1121)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1022)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:150)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:687)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:604)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:138)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:673)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:610)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1519)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1492)
+
+!ENTRY org.eclipse.equinox.ds 1 0 2016-09-12 16:21:52.413
+!MESSAGE Could not bind a reference of component EMFFormsViewService. The reference is: Reference[name = Provider, interface = org.eclipse.emf.ecp.view.spi.provider.IViewProvider, policy = dynamic, cardinality = 0..n, target = null, bind = addProvider, unbind = removeProvider]
+!SESSION 2016-09-19 15:19:37.160 -----------------------------------------------
+eclipse.buildId=4.6.0.I20160606-1100
+java.version=1.8.0_101
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=fr_FR
+Framework arguments:  -product org.eclipse.epp.package.modeling.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.modeling.product
+
+!ENTRY org.apache.log4j 2 0 2016-09-19 15:38:32.389
+!MESSAGE org.eclipse.xtext.ui.editor.outline.impl.AbstractOutlineNode  - The feature 'ownedLeft' is not a valid feature
+
+!STACK 0
+java.lang.IllegalArgumentException: The feature 'ownedLeft' is not a valid feature
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eStructuralFeature(BasicEObjectImpl.java:733)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eObjectForURIFragmentSegment(BasicEObjectImpl.java:551)
+	at org.eclipse.emf.ecore.resource.impl.ResourceImpl.getEObject(ResourceImpl.java:766)
+	at org.eclipse.emf.ecore.resource.impl.ResourceImpl.getEObject(ResourceImpl.java:742)
+	at org.eclipse.xtext.resource.XtextResource.access$1(XtextResource.java:1)
+	at org.eclipse.xtext.resource.XtextResource$1.getEObject(XtextResource.java:115)
+	at org.eclipse.xtext.resource.DefaultFragmentProvider.getEObject(DefaultFragmentProvider.java:28)
+	at org.eclipse.ocl.xtext.base.cs2as.BaseFragmentProvider.getEObject(BaseFragmentProvider.java:27)
+	at org.eclipse.xtext.resource.XtextResource.basicGetEObject(XtextResource.java:346)
+	at org.eclipse.xtext.resource.XtextResource.getEObject(XtextResource.java:332)
+	at org.eclipse.xtext.linking.lazy.LazyLinkingResource.getEObject(LazyLinkingResource.java:232)
+	at org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.getEObject(ResourceSetImpl.java:223)
+	at org.eclipse.xtext.ui.editor.outline.impl.AbstractOutlineNode$2.exec(AbstractOutlineNode.java:214)
+	at org.eclipse.xtext.ui.editor.outline.impl.AbstractOutlineNode$2.exec(AbstractOutlineNode.java:1)
+	at org.eclipse.xtext.resource.OutdatedStateManager.exec(OutdatedStateManager.java:98)
+	at org.eclipse.xtext.ui.editor.model.XtextDocument$XtextDocumentLocker.internalReadOnly(XtextDocument.java:520)
+	at org.eclipse.xtext.ui.editor.model.XtextDocument$XtextDocumentLocker.readOnly(XtextDocument.java:492)
+	at org.eclipse.xtext.ui.editor.model.XtextDocument.readOnly(XtextDocument.java:133)
+	at org.eclipse.xtext.ui.editor.outline.impl.AbstractOutlineNode.readOnly(AbstractOutlineNode.java:208)
+	at org.eclipse.xtext.ui.editor.outline.impl.AbstractOutlineNode.getChildren(AbstractOutlineNode.java:99)
+	at org.eclipse.xtext.ui.editor.outline.actions.OutlineWithEditorLinker.findBestNode(OutlineWithEditorLinker.java:143)
+	at org.eclipse.ocl.xtext.base.ui.outline.BaseOutlineWithEditorLinker.findBestNode(BaseOutlineWithEditorLinker.java:62)
+	at org.eclipse.xtext.ui.editor.outline.actions.OutlineWithEditorLinker.findBestNode(OutlineWithEditorLinker.java:144)
+	at org.eclipse.ocl.xtext.base.ui.outline.BaseOutlineWithEditorLinker.findBestNode(BaseOutlineWithEditorLinker.java:62)
+	at org.eclipse.xtext.ui.editor.outline.actions.OutlineWithEditorLinker.findBestNode(OutlineWithEditorLinker.java:144)
+	at org.eclipse.ocl.xtext.base.ui.outline.BaseOutlineWithEditorLinker.findBestNode(BaseOutlineWithEditorLinker.java:62)
+	at org.eclipse.xtext.ui.editor.outline.actions.OutlineWithEditorLinker.findBestNode(OutlineWithEditorLinker.java:144)
+	at org.eclipse.ocl.xtext.base.ui.outline.BaseOutlineWithEditorLinker.findBestNode(BaseOutlineWithEditorLinker.java:62)
+	at org.eclipse.xtext.ui.editor.outline.actions.OutlineWithEditorLinker.findBestNode(OutlineWithEditorLinker.java:144)
+	at org.eclipse.ocl.xtext.base.ui.outline.BaseOutlineWithEditorLinker.findBestNode(BaseOutlineWithEditorLinker.java:62)
+	at org.eclipse.xtext.ui.editor.outline.actions.OutlineWithEditorLinker.findBestNode(OutlineWithEditorLinker.java:144)
+	at org.eclipse.ocl.xtext.base.ui.outline.BaseOutlineWithEditorLinker.findBestNode(BaseOutlineWithEditorLinker.java:62)
+	at org.eclipse.xtext.ui.editor.outline.actions.OutlineWithEditorLinker.findBestNode(OutlineWithEditorLinker.java:144)
+	at org.eclipse.ocl.xtext.base.ui.outline.BaseOutlineWithEditorLinker.findBestNode(BaseOutlineWithEditorLinker.java:62)
+	at org.eclipse.xtext.ui.editor.outline.actions.OutlineWithEditorLinker.findBestNode(OutlineWithEditorLinker.java:144)
+	at org.eclipse.ocl.xtext.base.ui.outline.BaseOutlineWithEditorLinker.findBestNode(BaseOutlineWithEditorLinker.java:62)
+	at org.eclipse.xtext.ui.editor.outline.actions.OutlineWithEditorLinker.findBestNode(OutlineWithEditorLinker.java:144)
+	at org.eclipse.ocl.xtext.base.ui.outline.BaseOutlineWithEditorLinker.findBestNode(BaseOutlineWithEditorLinker.java:62)
+	at org.eclipse.xtext.ui.editor.outline.actions.OutlineWithEditorLinker.selectInTreeView(OutlineWithEditorLinker.java:129)
+	at org.eclipse.xtext.ui.editor.outline.actions.OutlineWithEditorLinker$TextListener.selectionChanged(OutlineWithEditorLinker.java:72)
+	at org.eclipse.jface.text.TextViewer.firePostSelectionChanged(TextViewer.java:2628)
+	at org.eclipse.jface.text.TextViewer.firePostSelectionChanged(TextViewer.java:2576)
+	at org.eclipse.jface.text.TextViewer$5.run(TextViewer.java:2555)
+	at org.eclipse.swt.widgets.Display.timerProc(Display.java:5144)
+	at org.eclipse.swt.internal.gtk.OS._g_main_context_iteration(Native Method)
+	at org.eclipse.swt.internal.gtk.OS.g_main_context_iteration(OS.java:2495)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4141)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1121)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1022)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:150)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:687)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:604)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:138)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:673)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:610)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1519)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1492)
+
+!ENTRY org.eclipse.papyrus.infra.gmfdiag.common 2 0 2016-09-19 15:43:40.361
+!MESSAGE Expansion model not loaded
+
+!ENTRY org.eclipse.papyrus.infra.gmfdiag.common 2 0 2016-09-19 15:43:40.368
+!MESSAGE 	The representation 'Flow Port As Label' references a element type that does not exist org.eclipse.papyrus.sysmldi.FlowPort_Label
+
+!ENTRY org.eclipse.papyrus.infra.gmfdiag.common 2 0 2016-09-19 15:43:40.374
+!MESSAGE 	The representation 'Verify Link' references a element type that does not exist org.eclipse.papyrus.sysmldi.Verify_Abstraction_Verify_Link
+
+!ENTRY org.eclipse.papyrus.infra.gmfdiag.common 2 0 2016-09-19 15:43:40.380
+!MESSAGE 	The representation 'Operation Border Item' references a element type that does not exist org.eclipse.papyrus.sysmldi.
+
+!ENTRY org.eclipse.papyrus.infra.gmfdiag.common 2 0 2016-09-19 15:43:40.386
+!MESSAGE 	The representation 'Constraint As Label' references a element type that does not exist org.eclipse.papyrus.sysmldi.Constraint_Label
+
+!ENTRY org.eclipse.papyrus.infra.gmfdiag.common 2 0 2016-09-19 15:43:40.392
+!MESSAGE 	The representation 'Class Port' references a element type that does not exist org.eclipse.papyrus.sysmldi.Class_Port
+
+!ENTRY org.eclipse.papyrus.infra.gmfdiag.common 2 0 2016-09-19 15:43:40.398
+!MESSAGE 	The representation 'Class ProxyPort' references a element type that does not exist org.eclipse.papyrus.sysmldi.Class_ProxyPort
+
+!ENTRY org.eclipse.papyrus.infra.gmfdiag.common 2 0 2016-09-19 15:43:40.404
+!MESSAGE 	The representation 'Class FullPort' references a element type that does not exist org.eclipse.papyrus.sysmldi.Class_FullPort
+
+!ENTRY org.eclipse.papyrus.infra.gmfdiag.common 2 0 2016-09-19 15:43:40.411
+!MESSAGE 	The representation 'ProxyPort As Label' references a element type that does not exist org.eclipse.papyrus.sysmldi.ProxyPort_Label
+
+!ENTRY org.eclipse.papyrus.infra.gmfdiag.common 2 0 2016-09-19 15:43:40.417
+!MESSAGE 	The representation 'FullPort As Label' references a element type that does not exist org.eclipse.papyrus.sysmldi.FullPort_Label
+
+!ENTRY org.eclipse.papyrus.infra.gmfdiag.common 2 0 2016-09-19 15:43:40.422
+!MESSAGE 	The representation 'References As Label' references a element type that does not exist org.eclipse.papyrus.sysmldi.Reference_label
+
+!ENTRY org.eclipse.papyrus.infra.gmfdiag.common 2 0 2016-09-19 15:43:40.428
+!MESSAGE 	The representation 'Parts As Label' references a element type that does not exist org.eclipse.papyrus.sysmldi.Part_label
+
+!ENTRY org.eclipse.papyrus.infra.gmfdiag.common 2 0 2016-09-19 15:43:40.435
+!MESSAGE 	The representation 'FlowProperty As Label' references a element type that does not exist org.eclipse.papyrus.sysmldi.FlowProperty_label
+
+!ENTRY org.eclipse.papyrus.infra.gmfdiag.common 2 0 2016-09-19 15:43:40.441
+!MESSAGE 	The representation 'Parameters As Label' references a element type that does not exist org.eclipse.papyrus.sysmldi.Parameter_label
+
+!ENTRY org.eclipse.papyrus.infra.gmfdiag.common 2 0 2016-09-19 15:43:40.469
+!MESSAGE Expansion model not loaded
+
+!ENTRY org.eclipse.papyrus.infra.gmfdiag.common 2 0 2016-09-19 15:43:40.476
+!MESSAGE 	The representation 'Flow Port As Icon' references a element type that does not exist org.eclipse.papyrus.sysmldi.FlowPort_Port_Shape
+
+!ENTRY org.eclipse.papyrus.infra.gmfdiag.common 2 0 2016-09-19 15:43:40.503
+!MESSAGE Expansion model not loaded
+
+!ENTRY org.eclipse.papyrus.infra.gmfdiag.common 2 0 2016-09-19 15:43:40.510
+!MESSAGE 	The representation 'ConstraintBlockProperty' references a element type that does not exist org.eclipse.papyrus.sysmldi.ConstraintPropertyComposite
+
+!ENTRY org.eclipse.papyrus.infra.gmfdiag.common 2 0 2016-09-19 15:43:40.516
+!MESSAGE 	The representation 'Border item that represents PropertyValue of SysML' references a element type that does not exist org.eclipse.papyrus.sysmldi.Parameter_BorderItem
+
+!ENTRY org.eclipse.papyrus.infra.gmfdiag.common 2 0 2016-09-19 15:43:40.523
+!MESSAGE 	The representation 'Constraint As Label' references a element type that does not exist org.eclipse.papyrus.sysmldi.Constraint_Label
+
+!ENTRY org.eclipse.equinox.ds 1 0 2016-09-19 15:43:50.387
+!MESSAGE Could not bind a reference of component EMFFormsViewService. The reference is: Reference[name = Provider, interface = org.eclipse.emf.ecp.view.spi.provider.IViewProvider, policy = dynamic, cardinality = 0..n, target = null, bind = addProvider, unbind = removeProvider]
+
+!ENTRY org.eclipse.emf.ecp.view.model 4 0 2016-09-19 16:07:45.984
+!MESSAGE No IItemPropertyDescriptor for feature eModelElement in EClass EAnnotation found.
+
+!ENTRY org.eclipse.emf.ecp.view.model 4 0 2016-09-19 16:07:46.030
+!MESSAGE No IItemPropertyDescriptor for feature eModelElement in EClass EAnnotation found.
+
+!ENTRY org.eclipse.emf.ecp.view.model 4 0 2016-09-19 16:07:46.040
+!MESSAGE No IItemPropertyDescriptor for feature eModelElement in EClass EAnnotation found.
+
+!ENTRY org.eclipse.emf.ecp.view.model 4 0 2016-09-19 16:08:09.182
+!MESSAGE No IItemPropertyDescriptor for feature eModelElement in EClass EAnnotation found.
+
+!ENTRY org.eclipse.emf.ecp.view.model 4 0 2016-09-19 16:08:09.189
+!MESSAGE No IItemPropertyDescriptor for feature eModelElement in EClass EAnnotation found.
+
+!ENTRY org.eclipse.emf.ecp.view.model 4 0 2016-09-19 16:08:09.195
+!MESSAGE No IItemPropertyDescriptor for feature eModelElement in EClass EAnnotation found.
+
+!ENTRY org.eclipse.emf.ecp.view.model 4 0 2016-09-19 16:08:11.175
+!MESSAGE No IItemPropertyDescriptor for feature eModelElement in EClass EAnnotation found.
+
+!ENTRY org.eclipse.emf.ecp.view.model 4 0 2016-09-19 16:08:11.182
+!MESSAGE No IItemPropertyDescriptor for feature eModelElement in EClass EAnnotation found.
+
+!ENTRY org.eclipse.emf.ecp.view.model 4 0 2016-09-19 16:08:11.188
+!MESSAGE No IItemPropertyDescriptor for feature eModelElement in EClass EAnnotation found.
+
+!ENTRY org.eclipse.emf.ecp.view.model 4 0 2016-09-19 16:09:47.153
+!MESSAGE No IItemPropertyDescriptor for feature eModelElement in EClass EAnnotation found.
+
+!ENTRY org.eclipse.emf.ecp.view.model 4 0 2016-09-19 16:09:47.160
+!MESSAGE No IItemPropertyDescriptor for feature eModelElement in EClass EAnnotation found.
+
+!ENTRY org.eclipse.emf.ecp.view.model 4 0 2016-09-19 16:09:47.166
+!MESSAGE No IItemPropertyDescriptor for feature eModelElement in EClass EAnnotation found.

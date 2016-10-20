@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+		<item value="/afs/deptinfo-st.univ-fcomte.fr/users/pwargnie/M2/test/bohnanza"/>
+		<item value="/afs/deptinfo-st.univ-fcomte.fr/users/pwargnie/M2/test/Pendu"/>
+	</list>
+	<section name="NewWizardAction">
+	</section>
+</section>

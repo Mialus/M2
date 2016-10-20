@@ -1,0 +1,125 @@
+<html xmlns:concordion="http://www.concordion.org/2007/concordion">
+<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+<link href="../concordion.css" rel="stylesheet" type="text/css"/>
+<body>
+
+<h1>Planter</h1>
+
+<p>
+    Si le joueur actif n'a aucune carte en main, il passe cette action.
+    Le joueur actif doit poser la première carte de sa main, sur un de ses champs de haricots.
+</p>
+
+<p>
+<li>Si la carte correspond à une variété de l'un de ses champs, il doit la planter là.</li>
+<li>Si la carte ne correspond pas, il doit la planter dans un de ses champs vides.</li>
+<li>Si la carte ne correspond pas et qu'il n'y a pas de champ vide, le joueur doit récolter et vendre tous les haricots
+    de l'un de ses champs. Il doit
+</li>
+</p>
+
+<div class="example">
+    <p>
+        Lorsque le joueur a en main <span concordion:set="#main">"harry-cochon", "harry-colt", "harry-coriace"</span> et
+        que
+        ses champs contiennent respectivement <span concordion:set="#champ1">4 "harry-cochon"</span> et <span
+            concordion:set="#champ2">2 "harry-cogne"</span>, le joueur doit planter sa carte <span
+            concordion:assertEquals="premiereCarteEnMain(#main)">"harry-cochon"</span> qui est la première de sa main.
+        Ses champs contiennent ensuite respectivement <span concordion:assertEquals="planter(#main, #champ1, #champ2)">5 "harry-cochon" et 2 "harry-cogne"</span>
+    </p>
+</div>
+
+<div class="example">
+    <p>
+        Lorsque le joueur a en main <span concordion:set="#main">"harry-copain", "harry-colt", "harry-comique"</span> et
+        que
+        ses champs contiennent respectivement <span concordion:set="#champ1">6 "harry-colt"</span> et <span
+            concordion:set="#champ2">8 "harry-cogne"</span>, le joueur doit planter sa carte <span
+            concordion:assertEquals="premiereCarteEnMain(#main)">"harry-copain"</span> qui est la première de sa main.
+        Pour le faire, il doit récolter l'un de ses champs avant de planter. Ses champs contiennent ensuite
+        respectivement <span concordion:assertEquals="planter(#main, #champ1, #champ2)">6 "harry-colt" et 1 "harry-copain"</span>
+    </p>
+</div>
+
+<h3>Récolter</h3>
+
+<p>
+    Un joueur peut récolter un champ et vendre ses haricots quand il le veut, y compris en dehors de son tour. Tous les
+    haricots du champs concerné sont alors vendus et le haricomêtre est consulté pour savoir combien de "Thunes" la
+    vente rapporte.
+    Quand un joueur vend un champ, il doit choisir un champ avec 2 haricots ou plus. Un joueur ne peut pas vendre un
+    champ avec un seul haricot à moins que tous ses champs n'aient qu'une carte. Dans ce cas il choisie la carte vendue.
+</p>
+
+<h4>Quelques exemples de récoltes</h4>
+
+<img src="http://www.cyberfab.fr/gfx/bohnanza/20.jpg"/> <img src="http://www.cyberfab.fr/gfx/bohnanza/4.jpg"/> <img
+        src="http://www.cyberfab.fr/gfx/bohnanza/14.jpg"/> <img src="http://www.cyberfab.fr/gfx/bohnanza/18.jpg"/>
+
+<br/>
+
+<div class="example">
+    <p>
+        Récolter 4 "harry-colt" rapporte 1 "thune" <br/>
+        Récolter 3 "harry-choco" rapporte 3 "thunes" <br/>
+        Récolter 5 "harry-colique" rapporte 2 "thunes" <br/>
+        Récolter 2 "harry-cauchemar" rapporte 0 "thune" <br/>
+
+    </p>
+</div>
+
+<h4>Choix du champ à récolter</h4>
+
+<p>Sans remmettre en cause la règle énoncée précédemment donnant la priorité à la récolte de champs comportant plus de 2
+    haricots sur les champs ne comptant qu'un seul haricot. Le choix du champs à récolter doit être guidé par les
+    perspectives de jeu que permet d'envisager la main du joueur.</p> <br/>
+
+<div class="example">
+    <p>
+    <table>
+        <tr ALIGN="CENTER">
+            <th> Main</th>
+            <th> Champ1</th>
+            <th> Champ2</th>
+            <th> Champ choisi</th>
+            <th> Thunes gagnées</th>
+            <th> commentaires</th>
+        </tr>
+        <tr ALIGN="CENTER">
+            <td> harry-cogne <br/> harry-cauchemar <br/> harry-copain <br/> harry-choco</td>
+            <td>2 harry-cochon</td>
+            <td>5 harry-cauchemar</td>
+            <td>Champ1</td>
+            <td>0 "thune"</td>
+            <td>aucun harry-cochon en main, 1 harry-cauchemar à jouer tour prochain pour un gain de 2 thunes</td>
+        </tr>
+        <tr ALIGN="CENTER">
+            <td> harry-cogne <br/> harry-cauchemar <br/> harry-copain <br/> harry-choco</td>
+            <td>7 harry-copain</td>
+            <td>5 harry-cauchemar</td>
+            <td>Champ1</td>
+            <td>4 "thunes"</td>
+            <td>champ harry-copain déjà au max de gain, bon à récolter.</td>
+        </tr>
+        <tr ALIGN="CENTER">
+            <td> harry-cogne <br/> harry-cauchemar <br/> harry-copain <br/> harry-choco</td>
+            <td>1 harry-cochet</td>
+            <td>2 harry-cauchemar</td>
+            <td>Champ2</td>
+            <td>0 "thune"</td>
+            <td>le premier champ n'est pas prioritaire (moins de 2 haricots)</td>
+        </tr>
+        <tr ALIGN="CENTER">
+            <td> harry-cogne <br/> harry-cauchemar <br/> harry-copain <br/> harry-choco</td>
+            <td>1 harry-cochet</td>
+            <td>1 harry-cauchemar</td>
+            <td>Champ1</td>
+            <td>0 "thune"</td>
+            <td>les deux champs sont à moins de 2 haricots, le choix peut être guidé par la main</td>
+        </tr>
+    </table>
+    </p>
+</div>
+
+</body>
+</html>

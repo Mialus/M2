@@ -1,6 +1,0 @@
-\select@language {portuguese}
-\contentsline {chapter}{\numberline {1}Resumo do projeto proposto}{1}
-\contentsline {chapter}{\numberline {2}Realiza\IeC {\c c}\IeC {\~o}es do per\IeC {\'\i }odo}{2}
-\contentsline {chapter}{\numberline {3}Descri\IeC {\c c}\IeC {\~a}o e avalia\IeC {\c c}\IeC {\~a}o do Apoio Institucional recebido no per\IeC {\'\i }odo}{3}
-\contentsline {chapter}{\numberline {4}Participa\IeC {\c c}\IeC {\~a}o em evento cient\IeC {\'\i }fico}{4}
-\contentsline {chapter}{Bibliografia}{4}

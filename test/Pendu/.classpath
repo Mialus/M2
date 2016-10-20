@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src/main/java"/>
+	<classpathentry kind="src" path="src/main/test"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="/applis/mockito/mockito-all-1.9.5-rc1.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/concordion"/>
+	<classpathentry kind="lib" path="/applis/concordion-1.4.2/dist/concordion-1.4.2.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

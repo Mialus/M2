@@ -1,0 +1,96 @@
+<html xmlns:concordion="http://www.concordion.org/2007/concordion">
+<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+<link href="../concordion.css" rel="stylesheet" type="text/css"/>
+<body>
+
+<h1>Bohnanza</h1>
+
+<img src="http://www.cyberfab.fr/gfx/bohnanza/bohnanza1.jpg"/>
+
+<p>
+    Ceci est la page principale de description des tests d'acceptations sur le jeu de Bonhanza.
+</p>
+
+
+<h3>Constitution du jeu</h3>
+
+<p>
+    Le jeu comporte 154 cartes de haricots réparties dans 11 variétés comme suit :
+
+<table concordion:execute="#nombre=compte(#variete)">
+    <tr ALIGN="CENTER">
+        <th concordion:set="#variete"> Variété</th>
+        <th concordion:assertEquals="#nombre"> nombre</th>
+    </tr>
+    <tr ALIGN="CENTER">
+        <td> harry-cogne</td>
+        <td> 24</td>
+    </tr>
+    <tr ALIGN="CENTER">
+        <td> harry-cochet</td>
+        <td> 22</td>
+    </tr>
+    <tr ALIGN="CENTER">
+        <td> harry-colt</td>
+        <td> 20</td>
+    </tr>
+    <tr ALIGN="CENTER">
+        <td> harry-cauchemar</td>
+        <td> 18</td>
+    </tr>
+    <tr ALIGN="CENTER">
+        <td> harry-cochon</td>
+        <td> 16</td>
+    </tr>
+    <tr ALIGN="CENTER">
+        <td> harry-colique</td>
+        <td> 14</td>
+    </tr>
+    <tr ALIGN="CENTER">
+        <td> harry-copain</td>
+        <td> 12</td>
+    </tr>
+    <tr ALIGN="CENTER">
+        <td> harry-chaos</td>
+        <td> 10</td>
+    </tr>
+    <tr ALIGN="CENTER">
+        <td> harry-comique</td>
+        <td> 8</td>
+    </tr>
+    <tr ALIGN="CENTER">
+        <td> harry-coriace</td>
+        <td> 6</td>
+    </tr>
+    <tr ALIGN="CENTER">
+        <td> harry-choco</td>
+        <td> 4</td>
+    </tr>
+</table>
+</p>
+
+<p>
+    Chaque variété de haricot comporte un haricomètre qui permet d'établir les "Thunes" gagnées lors de la récolte.
+</p>
+
+<img src="http://img3.trictrac.net/img-51c1add70b056.jpeg"/>
+
+
+<h3>Les phases du jeu</h3>
+
+
+<p>
+
+    A son tour, le joueur actif enchaine 4 étapes successives conformément aux règles.
+<li><a href="Planter.html">Planter</a> : le joueur doit, s'il a des cartes en main, planter le premier haricot de sa
+    main …
+</li>
+<li><a href="Echanger.html">Echanger</a> : le joueur pioche 2 cartes qu'il place devant lui...</li>
+<li><a href="RePlanter.html">Planter les haricots échangés</a> : tous les joueurs sont concernés, tous les haricots
+    échangés doivent être plantés
+</li>
+<li><a href="Piocher.html">Piocher</a> de nouvelles cartes</li>
+</p>
+
+</body>
+</html>

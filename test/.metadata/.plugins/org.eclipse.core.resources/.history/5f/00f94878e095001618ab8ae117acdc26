@@ -1,0 +1,50 @@
+package haricots;
+
+import junit.framework.Assert;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.junit.Ignore;
+import org.junit.Test;
+import org.mockito.Mockito;
+
+public class GameUnitTest {
+
+    @Test
+    public void testInscritJoueur() {
+    	Pioche p = Pioche.Factory.createPioche();
+    	Champ ps = new Champ();
+    	Champ ps1 = new Champ();
+    	Champ ps2 = new Champ();
+    	Champ ps3 = new Champ();
+    	Haricot h = new Haricot(Variete.HARRY_CAUCHEMAR);
+    	Haricot h1 = new Haricot(Variete.HARRY_CAUCHEMAR);
+    	Haricot h2 = new Haricot(Variete.HARRY_CAUCHEMAR);
+    	Haricot h3 = new Haricot(Variete.HARRY_CAUCHEMAR);
+    	Haricot h4 = new Haricot(Variete.HARRY_CAUCHEMAR);
+    	List<Haricot> hAll = new ArrayList<Haricot>();
+    	hAll.add(h);
+    	hAll.add(h1);
+    	hAll.add(h2);
+    	hAll.add(h3);
+    	hAll.add(h4);
+    	
+    	Main m = new Main();
+    	
+    	List<Champ> psAll = new ArrayList<Champ>();
+    	psAll.add(ps);
+    	psAll.add(ps1);
+    	psAll.add(ps2);
+    	psAll.add(ps3);
+    	Plantation pl = new Plantation(psAll);
+    	Joueur j1 = new Joueur(pl,);
+        Game game = new Game(p,j1);
+        Joueur joueur1 = Mockito.mock(Joueur.class);
+        Joueur joueur2 = Mockito.mock(Joueur.class);
+        game.inscritJoueurs(joueur1,joueur2);
+        Assert.assertEquals(2, game.nbJoueurs());
+    }
+
+
+}

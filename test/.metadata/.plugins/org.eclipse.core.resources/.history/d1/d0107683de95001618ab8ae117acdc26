@@ -1,0 +1,29 @@
+package haricots;
+
+import junit.framework.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
+import org.mockito.Mockito;
+
+public class GameUnitTest {
+
+    @Test
+    public void testInscritJoueur() {
+    	Pioche p = Pioche.Factory.createPioche();
+    	Champ ps = new Champ();
+    	Champ ps = new Champ();
+    	Champ ps = new Champ();
+    	Champ ps = new Champ();
+    	
+    	
+    	Plantation pl = new Plantation()
+    	Joueur j1 = new Joueur();
+        Game game = new Game(p,);
+        Joueur joueur1 = Mockito.mock(Joueur.class);
+        Joueur joueur2 = Mockito.mock(Joueur.class);
+        game.inscritJoueurs(joueur1,joueur2);
+        Assert.assertEquals(2, game.nbJoueurs());
+    }
+
+
+}

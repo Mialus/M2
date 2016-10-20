@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite-data name="TestModelTestSuite" identifier="4d984290-f1f0-456d-b2e0-477eb3efa47d">
+  <inlineFilter></inlineFilter>
+  <description></description>
+  <initialModelInstance>TestModel::InitialData</initialModelInstance>
+  <fixtures/>
+  <fixtureOperations/>
+  <endOfTestPredicate></endOfTestPredicate>
+  <testNaming/>
+  <storyGeneratorDefinitions>
+    <scenario-story-generator name="scenarios" identifier="scenarios_4d984290-f1f0-456d-b2e0-477eb3efa47d">
+      <description></description>
+      <scenarios/>
+    </scenario-story-generator>
+  </storyGeneratorDefinitions>
+  <protoStoriesDefinitions/>
+  <customProperties/>
+  <testPurposeDefinitions/>
+  <keywordDefinitions/>
+  <tagTableDefinitions/>
+  <tOclPropertyDefinitions/>
+  <tests/>
+</suite-data>

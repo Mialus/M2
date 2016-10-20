@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="NewModelWizard">
+		<item value="com.smartesting.eclipse.rsm.extensions.category" key="NewModelFromTemplatePage.lastCategory"/>
+		<item value="com.smartesting.eclipse.rsm.extensions.SmtTemplate" key="NewModelFromTemplatePage.lastTemplate"/>
+	</section>
+</section>

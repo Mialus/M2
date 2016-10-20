@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite-data name="TS1" identifier="0dde45fb-6838-4806-a87f-dd5bf9662327">
+  <inlineFilter></inlineFilter>
+  <description></description>
+  <initialModelInstance>SmartestingModel</initialModelInstance>
+  <fixtures/>
+  <fixtureOperations/>
+  <endOfTestPredicate></endOfTestPredicate>
+  <testNaming/>
+  <storyGeneratorDefinitions>
+    <scenario-story-generator name="scenarios" identifier="scenarios_0dde45fb-6838-4806-a87f-dd5bf9662327">
+      <description></description>
+      <scenarios/>
+    </scenario-story-generator>
+  </storyGeneratorDefinitions>
+  <protoStoriesDefinitions/>
+  <customProperties/>
+  <testPurposeDefinitions/>
+  <keywordDefinitions/>
+  <tagTableDefinitions/>
+  <tOclPropertyDefinitions/>
+  <tests/>
+</suite-data>

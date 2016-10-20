@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel"
+    modelDirectory="/td1Exo3/src" modelPluginID="td1Exo3" modelName="Td1Exo3"
+    rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container" importerID="org.eclipse.emf.importer.ecore"
+    complianceLevel="8.0" copyrightFields="false" operationReflection="true" importOrganizing="true">
+  <foreignModel>td1Exo3.ecore</foreignModel>
+  <genPackages prefix="Td1Exo3" disposableProviderFactory="true" ecorePackage="td1Exo3.ecore#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="td1Exo3.ecore#//NewEnum1"/>
+    <genClasses ecoreClass="td1Exo3.ecore#//Hotel"/>
+    <genClasses ecoreClass="td1Exo3.ecore#//Chambre"/>
+    <genClasses ecoreClass="td1Exo3.ecore#//NewEClass3"/>
+    <genClasses ecoreClass="td1Exo3.ecore#//NewEClass4"/>
+  </genPackages>
+</genmodel:GenModel>
