@@ -15,13 +15,13 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\write.cpp">
+    <ClCompile Include="src\read.cpp">
       <Filter>Fichiers sources</Filter>
     </ClCompile>
     <ClCompile Include="src\readAndStock.cpp">
       <Filter>Fichiers sources</Filter>
     </ClCompile>
-    <ClCompile Include="src\read.cpp">
+    <ClCompile Include="src\write.cpp">
       <Filter>Fichiers sources</Filter>
     </ClCompile>
     <ClCompile Include="src\bin\cvsXlsToFet.cpp">
@@ -29,10 +29,10 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="include\cvsXlsToFet\readAndStock.h">
+    <ClInclude Include="include\cvsXlsToFet\read.h">
       <Filter>Fichiers d%27en-tête</Filter>
     </ClInclude>
-    <ClInclude Include="include\cvsXlsToFet\read.h">
+    <ClInclude Include="include\cvsXlsToFet\readAndStock.h">
       <Filter>Fichiers d%27en-tête</Filter>
     </ClInclude>
     <ClInclude Include="include\cvsXlsToFet\write.h">
