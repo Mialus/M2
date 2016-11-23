@@ -1,0 +1,129 @@
+7 envoie le message START a ses voisins
+7 envoie le message a ses voisins'le LEADER est 7'
+7 reçoit le message START de 5
+7 reçoit le message de 5 'le LEADER est 5'
+7 reçoit le message START de 6
+7 reçoit le message de 6 'le LEADER est 6'
+7 reçoit le message START de 4
+7 reçoit le message de 4 'le LEADER est 4'
+7 reçoit le message START de 3
+7 reçoit le message de 3 'le LEADER est 3'
+7 reçoit le message START de 2
+7 reçoit le message de 2 'le LEADER est 2'
+7 reçoit le message de 5 'le LEADER est 7'
+7 reçoit le message de 6 'le LEADER est 7'
+7 reçoit le message START de 1
+7 reçoit le message de 1 'le LEADER est 1'
+7 reçoit le message START de 0
+7 reçoit le message de 0 'le LEADER est 0'
+7 reçoit le message de 4 'le LEADER est 6'
+7 reçoit le message de 2 'le LEADER est 4'
+7 reçoit le message de 3 'le LEADER est 5'
+7 reçoit le message de 4 'le LEADER est 7'
+7 reçoit le message de 1 'le LEADER est 3'
+7 reçoit le message de 0 'le LEADER est 2'
+7 reçoit le message de 2 'le LEADER est 5'
+7 reçoit le message de 0 'le LEADER est 3'
+7 reçoit le message de 3 'le LEADER est 7'
+7 reçoit le message de 2 'le LEADER est 6'
+7 reçoit le message de 2 'le LEADER est 7'
+7 reçoit le message de 0 'le LEADER est 4'
+7 reçoit le message de 1 'le LEADER est 5'
+7 reçoit le message de 0 'le LEADER est 5'
+7 reçoit le message de 1 'le LEADER est 7'
+7 reçoit le message de 0 'le LEADER est 6'
+7 reçoit le message de 0 'le LEADER est 7'
+7 envoie le message IMLEADER a son voisin 0
+7 envoie le message IMLEADER a son voisin 1
+7 envoie le message IMLEADER a son voisin 2
+7 envoie le message IMLEADER a son voisin 3
+7 envoie le message IMLEADER a son voisin 4
+7 envoie le message IMLEADER a son voisin 5
+7 envoie le message IMLEADER a son voisin 6
+7 reçoit le message IMLEADER a 5 (le LEADER est 7)
+7 reçoit le message IMLEADER a 6 (le LEADER est 7)
+7 reçoit le message IMLEADER a 4 (le LEADER est 7)
+7 reçoit le message IMLEADER a 2 (le LEADER est 7)
+7 reçoit le message IMLEADER a 3 (le LEADER est 7)
+7 reçoit le message IMLEADER a 1 (le LEADER est 7)
+7 reçoit le message IMLEADER a 0 (le LEADER est 7)
+7 reçoit le message REQ de 0
+7 envoie le message TOKEN a 0
+7 reçoit le message REQ de 6
+7 envoie le message REQ a 0(transmet la demande de 6)
+7 envoie le message REQ a 6
+7 reçoit le message REQ de 4
+7 reçoit le message REQ de 3
+7 envoie le message REQ a 4(transmet la demande de 3)
+7 reçoit le message REQ de 1
+7 envoie le message REQ a 3(transmet la demande de 1)
+7 reçoit le message TOKEN
+7 envoie le message TOKEN a 4
+7 reçoit le message REQ de 5
+7 envoie le message REQ a 1(transmet la demande de 5)
+7 reçoit le message REQ de 2
+7 envoie le message REQ a 5(transmet la demande de 2)
+7 envoie le message REQ a 2
+7 reçoit le message REQ de 6
+7 reçoit le message REQ de 2
+7 envoie le message REQ a 6(transmet la demande de 2)
+7 reçoit le message TOKEN
+7 envoie le message TOKEN a 6
+7 reçoit le message REQ de 5
+7 envoie le message REQ a 2(transmet la demande de 5)
+7 envoie le message REQ a 5
+7 reçoit le message TOKEN
+7 reçoit le message REQ de 6
+7 envoie le message TOKEN a 6
+7 reçoit le message REQ de 4
+7 envoie le message REQ a 6(transmet la demande de 4)
+7 reçoit le message REQ de 3
+7 envoie le message REQ a 4(transmet la demande de 3)
+7 envoie le message REQ a 3
+7 reçoit le message TOKEN
+7 reçoit le message REQ de 1
+7 envoie le message TOKEN a 1
+7 reçoit le message REQ de 4
+7 envoie le message REQ a 1(transmet la demande de 4)
+7 reçoit le message REQ de 5
+7 envoie le message REQ a 4(transmet la demande de 5)
+7 reçoit le message REQ de 3
+7 envoie le message REQ a 5(transmet la demande de 3)
+7 envoie le message REQ a 3
+7 reçoit le message REQ de 2
+7 reçoit le message TOKEN
+7 envoie le message TOKEN a 2
+7 envoie le message REQ a 2
+7 reçoit le message TOKEN
+7 reçoit le message REQ de 5
+7 envoie le message TOKEN a 5
+7 reçoit le message REQ de 2
+7 envoie le message REQ a 5(transmet la demande de 2)
+7 envoie le message REQ a 2
+7 reçoit le message TOKEN
+7 reçoit le message REQ de 1
+7 envoie le message TOKEN a 1
+7 reçoit le message REQ de 2
+7 envoie le message REQ a 1(transmet la demande de 2)
+7 reçoit le message REQ de 3
+7 envoie le message REQ a 2(transmet la demande de 3)
+7 envoie le message REQ a 3
+7 reçoit le message TOKEN
+7 reçoit le message REQ de 4
+7 envoie le message TOKEN a 4
+7 reçoit le message REQ de 2
+7 envoie le message REQ a 4(transmet la demande de 2)
+7 envoie le message REQ a 2
+7 reçoit le message REQ de 0
+7 reçoit le message REQ de 5
+7 envoie le message REQ a 0(transmet la demande de 5)
+7 reçoit le message REQ de 4
+7 envoie le message REQ a 5(transmet la demande de 4)
+7 reçoit le message TOKEN
+7 reçoit le message REQ de 1
+7 envoie le message REQ a 4(transmet la demande de 1)
+7 envoie le message TOKEN a 0
+7 envoie le message REQ a 1
+7 reçoit le message REQ de 0
+7 reçoit le message TOKEN
+7 envoie le message TOKEN a 0

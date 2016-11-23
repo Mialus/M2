@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <xsd:import namespace="http://www.w3.org/XML/1998/namespace"
+              schemaLocation="http://www.w3.org/2001/03/xml.xsd"/>
+
+  <xsd:include schemaLocation="common.xsd"/>
+
+  <xsd:element name="sf-1">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="entries">
+          <xsd:complexType>
+            <xsd:choice minOccurs="0" maxOccurs="unbounded">
+              <xsd:element name="book">
+                <xsd:complexType>
+                  <xsd:sequence>
+                    <xsd:choice>
+                      <xsd:element ref="author"/>
+                      <xsd:element ref="editor"/>
+                    </xsd:choice>
+                    <xsd:element ref="title"/>
+                    <xsd:element ref="publisher"/>
+                    <xsd:element ref="year"/>
+                    <xsd:element ref="month" minOccurs="0"/>
+                    <xsd:choice minOccurs="0">
+                      <xsd:element ref="volume"/>
+                      <xsd:element ref="number"/>
+                    </xsd:choice>
+                    <xsd:group ref="series-address"/>
+                    <xsd:element ref="edition" minOccurs="0"/>
+                    <xsd:element ref="translated-by" minOccurs="0"/>
+                    <xsd:element ref="note" minOccurs="0"/>
+                  </xsd:sequence>
+                  <xsd:attributeGroup ref="basic-attribute-group"/>
+                </xsd:complexType>
+              </xsd:element>
+              <xsd:element name="inproceedings">
+                <xsd:complexType>
+                  <xsd:sequence>
+                    <xsd:element ref="author"/>
+                    <xsd:element ref="title"/>
+                    <xsd:element ref="booktitle"/>
+                    <xsd:element ref="editor" minOccurs="0"/>
+                    <xsd:element ref="organization" minOccurs="0"/>
+                    <xsd:element ref="publisher" minOccurs="0"/>
+                    <xsd:element ref="year"/>
+                    <xsd:element ref="month" minOccurs="0"/>
+                    <xsd:element ref="volume" minOccurs="0"/>
+                    <xsd:element ref="number" minOccurs="0"/>
+                    <xsd:group ref="series-address"/>
+                    <xsd:element ref="pages" minOccurs="0"/>
+                    <xsd:element ref="translated-by" minOccurs="0"/>
+                    <xsd:element ref="note" minOccurs="0"/>
+                  </xsd:sequence>
+                  <xsd:attributeGroup ref="basic-attribute-group"/>
+                </xsd:complexType>
+              </xsd:element>
+            </xsd:choice>
+          </xsd:complexType>
+        </xsd:element>
+        <xsd:element name="persons">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element ref="personname" minOccurs="0"
+                           maxOccurs="unbounded"/>
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+
+  <xsd:attributeGroup name="basic-attribute-group">
+    <xsd:attribute name="id" type="xsd:ID" use="required"/>
+    <xsd:attribute ref="xml:lang" default="en"/>
+  </xsd:attributeGroup>
+
+  <xsd:element name="author" type="author-or-editor-type"/>
+  <xsd:element name="editor" type="author-or-editor-type"/>
+
+  <xsd:complexType name="author-or-editor-type">
+    <xsd:sequence><xsd:element ref="personrefs"/></xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:element name="personrefs">
+    <xsd:complexType>
+      <xsd:attribute name="to" type="xsd:IDREFS" use="required"/>
+    </xsd:complexType>
+  </xsd:element>
+
+  <xsd:element name="translated-by">
+    <xsd:complexType>
+      <xsd:complexContent>
+        <xsd:extension base="personrefs-etc-type">
+          <xsd:attribute name="from" type="xsd:language"/>
+        </xsd:extension>
+      </xsd:complexContent>
+    </xsd:complexType>
+  </xsd:element>
+
+  <xsd:complexType name="personrefs-etc-type">
+    <xsd:sequence>
+      <xsd:element ref="personrefs"/>
+      <xsd:element ref="and-others" minOccurs="0"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:element name="month">
+    <xsd:complexType>
+      <xsd:choice>
+        <xsd:element name="jan" type="month-name-type"/>
+        <xsd:element name="feb" type="month-name-type"/>
+        <xsd:element name="mar" type="month-name-type"/>
+        <xsd:element name="apr" type="month-name-type"/>
+        <xsd:element name="may" type="month-name-type"/>
+        <xsd:element name="jun" type="month-name-type"/>
+        <xsd:element name="jul" type="month-name-type"/>
+        <xsd:element name="aug" type="month-name-type"/>
+        <xsd:element name="sep" type="month-name-type"/>
+        <xsd:element name="oct" type="month-name-type"/>
+        <xsd:element name="nov" type="month-name-type"/>
+        <xsd:element name="dec" type="month-name-type"/>
+      </xsd:choice>
+    </xsd:complexType>
+  </xsd:element>
+
+  <xsd:complexType name="month-name-type"/>
+
+  <xsd:element name="personname">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="first" minOccurs="0" type="xsd:string"/>
+        <xsd:element name="middle" minOccurs="0" type="xsd:string"/>
+        <xsd:element name="von" minOccurs="0" type="xsd:string"/>
+        <xsd:element name="last" type="xsd:string"/>
+        <xsd:element name="junior" minOccurs="0">
+          <xsd:complexType/>
+        </xsd:element>
+        <xsd:element ref="pseudonym-of" minOccurs="0"/>
+      </xsd:sequence>
+      <xsd:attribute name="key" type="xsd:ID" use="required"/>
+      <xsd:attribute name="born" type="xsd:gYear"/>
+      <xsd:attribute name="dead" type="xsd:gYear"/>
+    </xsd:complexType>
+  </xsd:element>
+
+  <xsd:element name="pseudonym-of" type="personrefs-etc-type"/>
+
+</xsd:schema>

@@ -1,0 +1,7 @@
+﻿  xlsToFet.cpp
+d:\travail\m2\projetm2\sprint3\cvsxlstofet\cvsxlstofet\xlstofet.cpp(1): fatal error C1083: Impossible d'ouvrir le fichier include : 'towerdefense/readAndStock.h' : No such file or directory
+  write.cpp
+d:\travail\m2\projetm2\sprint3\cvsxlstofet\cvsxlstofet\write.cpp(1): fatal error C1083: Impossible d'ouvrir le fichier include : 'cvsXlsToFet/write.h' : No such file or directory
+  Source.cpp
+  readAndStock.cpp
+  Génération de code en cours...

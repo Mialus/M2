@@ -1,0 +1,12 @@
+﻿  read.cpp
+  readAndStock.cpp
+  write.cpp
+write.cpp(36): error C2653: 'ios' : n'est pas un nom de classe ni d'espace de noms
+write.cpp(36): error C2065: 'out' : identificateur non déclaré
+write.cpp(36): error C2563: incompatibilité dans la liste de paramètres formels
+write.cpp(36): error C2568: '|' : impossible de résoudre la surcharge de fonction
+  write.cpp(36): note: est peut-être '::std::enable_if<std::is_integral<_Ty>::value,double>::type trunc(_Ty)'
+  write.cpp(36): note: ou       'long double trunc(long double) noexcept'
+  write.cpp(36): note: ou       'float trunc(float) noexcept'
+  write.cpp(36): note: ou       'double trunc(double)'
+  xlsToFet.cpp
