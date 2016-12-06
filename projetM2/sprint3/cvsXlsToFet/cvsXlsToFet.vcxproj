@@ -29,6 +29,9 @@
     <ClInclude Include="include\cvsXlsToFet\readAndStock.h" />
     <ClInclude Include="include\cvsXlsToFet\write.h" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="cvsXlsToFet.VC.db" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{5B16EF3E-CAE8-49B5-AC9B-3F76AA884E73}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>

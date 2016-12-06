@@ -1,0 +1,8 @@
+﻿C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(368,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
+  cvsXlsToFet.cpp
+  read.cpp
+  readAndStock.cpp
+  write.cpp
+cvsXlsToFet.obj : error LNK2001: symbole externe non résolu "class boost::system::error_category const & __cdecl boost::system::system_category(void)" (?system_category@system@boost@@YAAEBVerror_category@12@XZ)
+cvsXlsToFet.obj : error LNK2001: symbole externe non résolu "class boost::system::error_category const & __cdecl boost::system::generic_category(void)" (?generic_category@system@boost@@YAAEBVerror_category@12@XZ)
+.\bin\Release\cvsXlsToFet.exe : fatal error LNK1120: 2 externes non résolus

@@ -1,0 +1,63 @@
+﻿C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(368,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
+  write.cpp
+src\write.cpp(48): warning C4018: '<' : incompatibilité signed/unsigned
+src\write.cpp(60): warning C4018: '<' : incompatibilité signed/unsigned
+src\write.cpp(71): warning C4018: '<' : incompatibilité signed/unsigned
+src\write.cpp(86): warning C4018: '<' : incompatibilité signed/unsigned
+src\write.cpp(101): warning C4018: '<' : incompatibilité signed/unsigned
+src\write.cpp(102): error C2679: '<<' binaire : aucun opérateur trouvé qui accepte un opérande de partie droite de type 'std::vector<std::vector<std::string,std::allocator<_Ty>>,std::allocator<std::vector<_Ty,std::allocator<_Ty>>>>' (ou il n'existe pas de conversion acceptable)
+          with
+          [
+              _Ty=std::string
+          ]
+  D:\VisualStudio\VC\include\ostream(495): note: est peut-être 'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(std::basic_streambuf<char,std::char_traits<char>> *)'
+  D:\VisualStudio\VC\include\ostream(475): note: ou       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(const void *)'
+  D:\VisualStudio\VC\include\ostream(455): note: ou       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(long double)'
+  D:\VisualStudio\VC\include\ostream(435): note: ou       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(double)'
+  D:\VisualStudio\VC\include\ostream(415): note: ou       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(float)'
+  D:\VisualStudio\VC\include\ostream(395): note: ou       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(unsigned __int64)'
+  D:\VisualStudio\VC\include\ostream(375): note: ou       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(__int64)'
+  D:\VisualStudio\VC\include\ostream(355): note: ou       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(unsigned long)'
+  D:\VisualStudio\VC\include\ostream(335): note: ou       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(long)'
+  D:\VisualStudio\VC\include\ostream(315): note: ou       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(unsigned int)'
+  D:\VisualStudio\VC\include\ostream(290): note: ou       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(int)'
+  D:\VisualStudio\VC\include\ostream(270): note: ou       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(unsigned short)'
+  D:\VisualStudio\VC\include\ostream(236): note: ou       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(short)'
+  D:\VisualStudio\VC\include\ostream(216): note: ou       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(bool)'
+  D:\VisualStudio\VC\include\ostream(209): note: ou       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(std::ios_base &(__cdecl *)(std::ios_base &))'
+  D:\VisualStudio\VC\include\ostream(202): note: ou       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(std::basic_ios<char,std::char_traits<char>> &(__cdecl *)(std::basic_ios<char,std::char_traits<char>> &))'
+  D:\VisualStudio\VC\include\ostream(196): note: ou       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(std::basic_ostream<char,std::char_traits<char>> &(__cdecl *)(std::basic_ostream<char,std::char_traits<char>> &))'
+  D:\VisualStudio\VC\include\ostream(692): note: ou       'std::basic_ostream<char,std::char_traits<char>> &std::operator <<<char,std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,const char *)'
+  D:\VisualStudio\VC\include\ostream(739): note: ou       'std::basic_ostream<char,std::char_traits<char>> &std::operator <<<char,std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,char)'
+  D:\VisualStudio\VC\include\ostream(777): note: ou       'std::basic_ostream<char,std::char_traits<char>> &std::operator <<<std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,const char *)'
+  D:\VisualStudio\VC\include\ostream(824): note: ou       'std::basic_ostream<char,std::char_traits<char>> &std::operator <<<std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,char)'
+  D:\VisualStudio\VC\include\ostream(950): note: ou       'std::basic_ostream<char,std::char_traits<char>> &std::operator <<<std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,const signed char *)'
+  D:\VisualStudio\VC\include\ostream(957): note: ou       'std::basic_ostream<char,std::char_traits<char>> &std::operator <<<std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,signed char)'
+  D:\VisualStudio\VC\include\ostream(964): note: ou       'std::basic_ostream<char,std::char_traits<char>> &std::operator <<<std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,const unsigned char *)'
+  D:\VisualStudio\VC\include\ostream(971): note: ou       'std::basic_ostream<char,std::char_traits<char>> &std::operator <<<std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,unsigned char)'
+  D:\VisualStudio\VC\include\ostream(981): note: ou       'std::basic_ostream<char,std::char_traits<char>> &std::operator <<<char,std::char_traits<char>,std::vector<std::vector<std::string,std::allocator<_Ty>>,std::allocator<std::vector<_Ty,std::allocator<_Ty>>>>>(std::basic_ostream<char,std::char_traits<char>> &&,const std::vector<std::vector<_Ty,std::allocator<_Ty>>,std::allocator<std::vector<_Ty,std::allocator<_Ty>>>> &)'
+          with
+          [
+              _Ty=std::string
+          ]
+  D:\VisualStudio\VC\include\ostream(1019): note: ou       'std::basic_ostream<char,std::char_traits<char>> &std::operator <<<char,std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,const std::error_code &)'
+  src\write.cpp(102): note: lors de la tentative de mise en correspondance de la liste des arguments '(std::basic_ostream<char,std::char_traits<char>>, std::vector<std::vector<std::string,std::allocator<_Ty>>,std::allocator<std::vector<_Ty,std::allocator<_Ty>>>>)'
+          with
+          [
+              _Ty=std::string
+          ]
+src\write.cpp(103): error C2039: 'first' : n'est pas membre de 'std::vector<std::vector<std::string,std::allocator<_Ty>>,std::allocator<std::vector<_Ty,std::allocator<_Ty>>>>'
+          with
+          [
+              _Ty=std::string
+          ]
+  D:\travail\M2\projetM2\sprint3\cvsXlsToFet\include\cvsXlsToFet/write.h(10): note: voir la déclaration de 'std::vector<std::vector<std::string,std::allocator<_Ty>>,std::allocator<std::vector<_Ty,std::allocator<_Ty>>>>'
+          with
+          [
+              _Ty=std::string
+          ]
+src\write.cpp(114): warning C4018: '<' : incompatibilité signed/unsigned
+src\write.cpp(135): warning C4018: '<' : incompatibilité signed/unsigned
+src\write.cpp(147): warning C4018: '<' : incompatibilité signed/unsigned
+src\write.cpp(170): warning C4018: '<' : incompatibilité signed/unsigned
+src\write.cpp(183): warning C4018: '<' : incompatibilité signed/unsigned
