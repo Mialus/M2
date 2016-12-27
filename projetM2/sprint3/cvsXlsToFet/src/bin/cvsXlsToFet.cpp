@@ -1,6 +1,7 @@
 #include <cvsXlsToFet\readAndStock.h>
 #include <cvsXlsToFet\read.h>
 #include <cvsXlsToFet\write.h>
+#include <cvsXlsToFet\ParserData.h>
 #include <boost\filesystem.hpp>
 #include <iostream>
 #include <boost/thread/mutex.hpp>
@@ -16,6 +17,10 @@ int main(int argc, char *argv[]) {
 
 	//création du fichier en écriture
 	//cv::write w;
+
+	cout << "hi";
+
+	cv::ParserData data;
 
 	//load ressource
 	fs::path bindir_path(argv[0]);

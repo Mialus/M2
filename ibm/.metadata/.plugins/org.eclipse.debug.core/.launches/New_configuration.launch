@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.m2m.atl.adt.launching.atlTransformation">
+<stringAttribute key="ATL File Name" value="/ATL_Logo2Java_2015/Metamodels/atl/ATL_Logo2Java_2015.atl"/>
+<stringAttribute key="ATL VM" value="EMF-specific VM"/>
+<stringAttribute key="ATL_COMPILER" value="atl2006"/>
+<booleanAttribute key="IS_REFINING" value="false"/>
+<mapAttribute key="Input">
+<mapEntry key="input" value="Logo"/>
+</mapAttribute>
+<mapAttribute key="Libs"/>
+<mapAttribute key="Model Handler">
+<mapEntry key="Java" value="EMF"/>
+<mapEntry key="Logo" value="EMF"/>
+</mapAttribute>
+<mapAttribute key="ModelType">
+<mapEntry key="Java" value="METAMODELOUTPUT"/>
+<mapEntry key="Logo" value="METAMODELINPUT"/>
+<mapEntry key="input" value="MODELINPUT"/>
+<mapEntry key="out" value="MODELOUTPUT"/>
+</mapAttribute>
+<mapAttribute key="Options">
+<mapEntry key="OPTION_CLEAR" value="false"/>
+<mapEntry key="OPTION_CONTENT_TYPE" value="false"/>
+<mapEntry key="OPTION_DERIVED" value="true"/>
+<mapEntry key="allowInterModelReferences" value="false"/>
+<mapEntry key="printExecutionTime" value="false"/>
+<mapEntry key="step" value="false"/>
+<mapEntry key="supportUML2Stereotypes" value="false"/>
+</mapAttribute>
+<listAttribute key="OrderedInput">
+<listEntry value="input"/>
+</listAttribute>
+<listAttribute key="OrderedOutput">
+<listEntry value="out"/>
+</listAttribute>
+<mapAttribute key="Output">
+<mapEntry key="out" value="Java"/>
+</mapAttribute>
+<mapAttribute key="Path">
+<mapEntry key="Java" value="/ATL_Logo2Java_2015/Metamodels/ASMLogo.ecore"/>
+<mapEntry key="Logo" value="/ATL_Logo2Java_20152/Metamodels/ASMLogo.ecore"/>
+<mapEntry key="input" value="/ATL_Logo2Java_2015/test/example1.logo"/>
+<mapEntry key="out" value="/ATL_Logo2Java_2015/out.xmi"/>
+</mapAttribute>
+<listAttribute key="Superimpose"/>
+</launchConfiguration>

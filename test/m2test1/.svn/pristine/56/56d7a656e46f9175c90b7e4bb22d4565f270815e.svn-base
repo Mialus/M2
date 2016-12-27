@@ -1,0 +1,13 @@
+<?php
+session_start();
+include "../lib/spdo.php";
+
+if(isset($_SESSION['admin'])){
+	if($_SESSION['admin']==1){
+		echo "Monsieur admin";
+	}
+}
+
+$err = SPDO::getInstance()->afficheEvent();
+
+?>

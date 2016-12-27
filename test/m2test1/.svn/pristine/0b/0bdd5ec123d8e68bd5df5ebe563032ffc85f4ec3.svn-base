@@ -1,0 +1,119 @@
+<?php
+/**
+ * Class SPDO (Singleton PDO)
+ *
+ * @description
+ *		Singleton pattern implemented into PDO
+ *
+ */
+
+namespace CroissantShow {
+
+    class SPDO
+    {
+        private $_PDOInstance = null;
+        const DEFAULT_SQL_HOST = 'http://m2gl.deptinfo-st.univ-fcomte.fr/phpmyadmin';
+        const DEFAULT_SQL_USER = 'm2test1';
+        const DEFAULT_SQL_PASSWORD = 'm2test1';
+        const DEFAULT_SQL_DATABASE = 'm2test1';
+
+        private static $_instance = null;
+
+        public function __construct()
+        {
+
+            $ctp = func_num_args();
+            $args = func_get_args();
+
+            switch($ctp) {
+                case 1:
+                    //cas où l'ont passe une base de donnée de test en paramètre
+                    break;
+                default:
+                    $this->_PDOInstance = new PDO(
+                    'mysql:dbname=' . self::DEFAULT_SQL_DATABASE .
+                    ';host=' . self::DEFAULT_SQL_HOST,
+                    self::DEFAULT_SQL_USER,
+                    self::DEFAULT_SQL_PASSWORD);
+            }
+        }
+
+        public static function getInstance()
+        {
+            if (is_null(self::$_instance))
+                self::$_instance = new SPDO();
+            return self::$_instance;
+        }
+
+        public function userConnection($id, $mdp)
+        {
+            if (!SPDO::isMailCorrect($id) && $id !== 'admin') {
+                return false;
+            }
+
+            try {
+                $pbd = $this->_PDOInstance->prepare("SELECT login, lastname, firstname, adherant, admin FROM USER WHERE login='" . $id . "' and pwd='" . $mdp . "' and adherant='1'");
+                $pbd->bindValue(':login', $id, PDO::PARAM_STR);
+                $pbd->bindValue(':pass', $mdp, PDO::PARAM_STR);
+                $pbd->execute();
+            } catch (PDOException $e) {
+                echo $e->getMessage();
+                return false;
+            }
+
+            if ($pbd->rowCount() > 0) {
+                while ($donnees = $pbd->fetch()) {
+                    $_SESSION['login'] = $id;
+                    $_SESSION['nom'] = $donnees['firstname'];
+                    $_SESSION['prenom'] = $donnees['lastname'];
+                    $_SESSION['adherant'] = $donnees['adherant'];
+                    $_SESSION['admin'] = $donnees['admin'];
+                }
+                return true;
+            }
+            return false;
+        }
+
+        public function userInscription($log, $mdp, $nom, $prenom)
+        {
+            try {
+                $pbd = $this->_PDOInstance->prepare("INSERT INTO user (login, pwd, lastname, firstname) VALUES(:login,:pass,:nom,:prenom)");
+                $pbd->bindValue(':login', $log, PDO::PARAM_STR);
+                $pbd->bindValue(':pass', $mdp, PDO::PARAM_STR);
+                $pbd->bindValue(':nom', $nom, PDO::PARAM_STR);
+                $pbd->bindValue(':prenom', $prenom, PDO::PARAM_STR);
+                $pbd->execute();
+            } catch (PDOException $e) {
+                echo $e->getMessage();
+                return false;
+            }
+            return true;
+        }
+
+        private static function isMailCorrect($mail)
+        {
+            $mail = filter_var($mail, FILTER_SANITIZE_EMAIL);
+            return filter_var($mail, FILTER_VALIDATE_EMAIL);
+        }
+
+        public function afficheEvent()
+        {
+            try {
+
+                $pbd = $this->_PDOInstance->prepare("SELECT lastname, firstname, dateEvent FROM User,Participant WHERE User.login=Participant.login ORDER BY dateEvent");
+                $pbd->execute();
+            } catch (PDOException $e) {
+                echo $e->getMessage();
+            }
+
+            if ($pbd->rowCount() > 0) {
+                while ($donnees = $pbd->fetch()) {
+                    echo "<label><input type='checkbox' value=''>Mercredi " . $donnees['dateEvent'] . " : " . $donnees['lastname'] . " " . $donnees['firstname'] . "</label><br>";
+                }
+                return true;
+            } else {
+                return false;
+            }
+        }
+    }
+}

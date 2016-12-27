@@ -27,6 +27,15 @@
     <ClCompile Include="src\bin\cvsXlsToFet.cpp">
       <Filter>Fichiers sources</Filter>
     </ClCompile>
+    <ClCompile Include="src\parser_utility.cpp">
+      <Filter>Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ParserData.cpp">
+      <Filter>Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vector_utility.cpp">
+      <Filter>Fichiers sources</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\cvsXlsToFet\read.h">
@@ -38,8 +47,18 @@
     <ClInclude Include="include\cvsXlsToFet\write.h">
       <Filter>Fichiers d%27en-tête</Filter>
     </ClInclude>
+    <ClInclude Include="include\cvsXlsToFet\parser_utility.h">
+      <Filter>Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cvsXlsToFet\ParserData.h">
+      <Filter>Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cvsXlsToFet\vector_utility.h">
+      <Filter>Fichiers d%27en-tête</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="cvsXlsToFet.VC.db" />
+    <None Include="res\LISTE_ETUDIANTS_POUR_les_examen_et_Ue.csv" />
   </ItemGroup>
 </Project>

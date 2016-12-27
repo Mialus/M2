@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="WEB_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$" />
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library">
+      <library name="PHP Runtime" type="php">
+        <CLASSES>
+          <root url="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/standard" />
+        </CLASSES>
+        <SOURCES>
+          <root url="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/standard" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="PHARS">
+        <CLASSES>
+          <root url="phar://$MODULE_DIR$/applis/phpcpd/phpcpd.phar/" />
+          <root url="phar://$MODULE_DIR$/applis/phpmd/phpmd.phar/" />
+          <root url="phar://$MODULE_DIR$/applis/phpcs/phpcs.phar/" />
+          <root url="phar://$MODULE_DIR$/applis/phpcb/phpcb.phar/" />
+          <root url="phar://$MODULE_DIR$/applis/atoum/atoum.phar/" />
+          <root url="phar://$MODULE_DIR$/applis/pdepend/pdepend.phar/" />
+          <root url="phar://$MODULE_DIR$/applis/phploc/phploc.phar/" />
+          <root url="phar://$MODULE_DIR$/applis/phpdox/phpdox.phar/" />
+        </CLASSES>
+        <SOURCES>
+          <root url="phar://$MODULE_DIR$/applis/phpcpd/phpcpd.phar/" />
+          <root url="phar://$MODULE_DIR$/applis/phpmd/phpmd.phar/" />
+          <root url="phar://$MODULE_DIR$/applis/phpcs/phpcs.phar/" />
+          <root url="phar://$MODULE_DIR$/applis/phpcb/phpcb.phar/" />
+          <root url="phar://$MODULE_DIR$/applis/atoum/atoum.phar/" />
+          <root url="phar://$MODULE_DIR$/applis/pdepend/pdepend.phar/" />
+          <root url="phar://$MODULE_DIR$/applis/phploc/phploc.phar/" />
+          <root url="phar://$MODULE_DIR$/applis/phpdox/phpdox.phar/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+  </component>
+</module>

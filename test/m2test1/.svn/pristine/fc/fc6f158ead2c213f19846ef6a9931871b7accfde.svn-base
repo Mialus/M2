@@ -1,0 +1,46 @@
+<?php
+require('DataBase.php');
+require('bibli.php');
+
+session_start();
+echo_html_head("Connexion", "css/style.css");
+
+function formConnexion() {
+	echo('<form action="Connexion.php" name="Form-login" method="post">
+		<p>Identifiant : <input type="text" name="id" size=25 /></p>
+		<p>Mot de passe : <input type="pwd" name="mdp"size=25 /></p>
+		<p><input type="submit" value="Connexion"></p>
+		<input type="hidden" name="co" value="co"/>
+	      </form>');
+}
+
+echo '<div id="Form-connexion">';
+
+if(isset($_POST['co'])) {
+ 	$DB = new DataBase();
+		$id = $DB->real_escape_string($POST['id']);
+		$mdp = $DB->real_escape_string($_POST['mdp']);
+
+		$resultat = $DB->requete_SQL("SELECT COUNT(login) as user, lastname, firstname, adherant, admin FROM USER WHERE login=".$id." and pwd=".$mdp."");
+		$res = $resultat->fetch_assoc();
+
+		if($res['user'] < 1) {
+			 echo("identifiant ou mot de passe non valide");
+		} else {
+		 	$_SESSION['login'] = $_POST['id'];
+	 		$_SESSION['nom'] = $res['firstname'];
+	 		$_SESSION['prenom'] = $res['lastname'];
+		 	$_SESSION['adherant'] = $res['adherant'];
+			 $_SESSION['admin'] = $res['admin'];
+			 echo("Vous êtes maintenant connecté");
+			 echo("<script type='text/javascript'>document.location.replace('organisation.php');</script>");
+		}
+		
+}
+
+	formConnexion();
+			
+	echo '</div>';
+
+ echo_html_end();
+?>

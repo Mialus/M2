@@ -20,17 +20,24 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\bin\cvsXlsToFet.cpp" />
+    <ClCompile Include="src\ParserData.cpp" />
+    <ClCompile Include="src\parser_utility.cpp" />
     <ClCompile Include="src\read.cpp" />
     <ClCompile Include="src\readAndStock.cpp" />
+    <ClCompile Include="src\vector_utility.cpp" />
     <ClCompile Include="src\write.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="include\cvsXlsToFet\ParserData.h" />
+    <ClInclude Include="include\cvsXlsToFet\parser_utility.h" />
     <ClInclude Include="include\cvsXlsToFet\read.h" />
     <ClInclude Include="include\cvsXlsToFet\readAndStock.h" />
+    <ClInclude Include="include\cvsXlsToFet\vector_utility.h" />
     <ClInclude Include="include\cvsXlsToFet\write.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="cvsXlsToFet.VC.db" />
+    <None Include="res\LISTE_ETUDIANTS_POUR_les_examen_et_Ue.csv" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{5B16EF3E-CAE8-49B5-AC9B-3F76AA884E73}</ProjectGuid>

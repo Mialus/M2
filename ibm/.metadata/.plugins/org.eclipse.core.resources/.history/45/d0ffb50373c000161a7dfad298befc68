@@ -1,0 +1,160 @@
+module ATL_Logo2Java_2015;
+
+create out : Java from input : Logo;
+
+rule JavaProgram{
+	from p : Logo!LogoProgram
+	to out : Java!MethodeDeclaration (
+		name<-'Drawer',
+		methodDeclaration<- p.instruction->select(m | m.oclIsKindOf(Logo!ProcDeclaration))->append(main)
+		),
+		
+		main : Java!Main(
+		instruction <-p.instruction->reject(m | m.oclIsKindOf(Logo!ProcDeclaration))	
+		)
+}
+
+rule PenDown{
+	from o : Logo!PenDown
+	to out : Java!MethodeDeclaration (
+		name <- 'PenDown'
+		)
+}
+
+rule PenUp{
+	from o : Logo!PenUp
+	to out : Java!MethodeDeclaration (
+		name <- 'PenUp'
+		)
+}
+
+rule Clear{
+	from o : Logo!Clear
+	to out : Java!MethodeDeclaration (
+		name <- 'Clear'
+		)
+}
+
+rule Forward{
+	from o : Logo!Forward
+	to out : Java!MethodeDeclaration (
+		name <- 'Forward'
+		)
+}
+
+rule Right{
+	from o : Logo!Right
+	to out : Java!MethodeDeclaration (
+		name <- 'Right'
+		)
+}
+
+rule Left{
+	from o : Logo!left
+	to out : Java!MethodeDeclaration (
+		name <- 'Left'
+		)
+}
+
+rule Equals{
+	from o : Logo!Equals
+	to out : Java!Equals(
+		lhs<-o.lhs,
+		rhs<-o.rhs
+		)
+}
+
+rule Lower{
+	from o : Logo!Lower
+	to out : Java!Lower(
+		lhs<-o.lhs,
+		rhs<-o.rhs
+		)
+}
+
+rule Minus{
+	from o : Logo!Minus
+	to out : Java!Minus(
+		lhs<-o.lhs,
+		rhs<-o.rhs
+		)
+}
+
+rule Mult{
+	from o : Logo!Mult
+	to out : Java!Mult(
+		lhs<-o.lhs,
+		rhs<-o.rhs
+		)
+}
+
+rule Div{
+	from o : Logo!Div
+	to out : Java!Div(
+		lhs<-o.lhs,
+		rhs<-o.rhs
+		)
+}
+
+rule Plus{
+	from o : Logo!Plus
+	to out : Java!Plus(
+		lhs<-o.lhs,
+		rhs<-o.rhs
+		)
+}
+
+rule Greater{
+	from o : Logo!Greater
+	to out : Java!Greater(
+		lhs<-o.lhs,
+		rhs<-o.rhs
+		)
+}
+
+rule For{
+	from o : Logo!Repeat
+	to out : Java!For(
+		block<-o.block,
+		condition<-o.condition
+	)
+}
+
+rule While{
+	from o : Logo!While
+	to out : Java!While(
+		condition<-o.condition,
+		block<-o.block
+		)
+}
+
+rule If{
+	from o : Logo!If
+	to out : Java!If(
+		condition<-o.condition,
+		elsepart<-o.elsepart,
+		thenpart<-o.thenpart
+		)
+}
+
+rule Block{
+	from o : Logo!Block
+	to out : Java!Block(
+		instruction<- o.instruction
+		)
+}
+
+rule Constant{
+	from o : Logo!Constant
+	to out : Java!Constant(
+		integerValue<- o.intergerValue
+		)
+}
+
+rule ProcMethode{
+	from o : Logo!ProcDeclaration
+	to out : Java!ProcDeclaration(
+		args<-o.args,
+		instrcutions<-o.instructions)
+	
+}

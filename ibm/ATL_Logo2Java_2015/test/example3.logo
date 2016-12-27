@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<logo:LogoProgram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:logo="http://www.kermeta.org/kmLogo">
+  <instructions xsi:type="logo:ProcDeclaration" name="arc" procCall="//@instructions.1/@instructions.0/@block/@instructions.0">
+    <args name="pas"/>
+    <args name="angle"/>
+    <instructions xsi:type="logo:Forward">
+      <steps xsi:type="logo:ParameterCall" parameter="//@instructions.0/@args.0"/>
+    </instructions>
+    <instructions xsi:type="logo:Right">
+      <angle xsi:type="logo:ParameterCall" parameter="//@instructions.0/@args.1"/>
+    </instructions>
+  </instructions>
+  <instructions xsi:type="logo:ProcDeclaration" name="polygon" procCall="//@instructions.4">
+    <args name="nbcote"/>
+    <instructions xsi:type="logo:Repeat">
+      <condition xsi:type="logo:ParameterCall" parameter="//@instructions.1/@args.0"/>
+      <block>
+        <instructions xsi:type="logo:ProcCall" declaration="//@instructions.0">
+          <actualArgs xsi:type="logo:Div">
+            <lhs xsi:type="logo:Constant" integerValue="400"/>
+            <rhs xsi:type="logo:ParameterCall" parameter="//@instructions.1/@args.0"/>
+          </actualArgs>
+          <actualArgs xsi:type="logo:Div">
+            <lhs xsi:type="logo:Constant" integerValue="360"/>
+            <rhs xsi:type="logo:ParameterCall" parameter="//@instructions.1/@args.0"/>
+          </actualArgs>
+        </instructions>
+      </block>
+    </instructions>
+  </instructions>
+  <instructions xsi:type="logo:Clear"/>
+  <instructions xsi:type="logo:PenDown"/>
+  <instructions xsi:type="logo:ProcCall" declaration="//@instructions.1">
+    <actualArgs xsi:type="logo:Constant" integerValue="10"/>
+  </instructions>
+  <instructions xsi:type="logo:PenUp"/>
+</logo:LogoProgram>

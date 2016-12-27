@@ -1,0 +1,13 @@
+<?php
+	include "../lib/spdo.php";
+
+    if(isset($_POST['prenom']) && isset($_POST['nom']) && isset($_POST['mail']) && isset($_POST['pass']) && isset($_POST['pass_repeat'])) {
+		if(SPDO::getInstance()->userInscription($_POST['mail'],$_POST['pass'],$_POST['nom'],$_POST['prenom'])) {
+			echo "<script type='text/javascript'>document.location.replace('Connexion.php');</script>";
+		} else {
+			echo "Inscription échouée";
+		}
+    }
+	
+	include "../view/inscriptionView.php";
+?>

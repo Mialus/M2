@@ -1,0 +1,102 @@
+module ATL_Logo2Java_2015;
+
+create out : Java from input : Logo;
+
+rule JavaProgram{
+	from p : Logo!LogoProgram
+	to out : Java!MethodeDeclaration (
+		name<-'Drawer',
+		methodDeclaration<- p.instruction->select(m | m.oclIsKindOf(Logo!ProcDeclaration))->append(main)
+		),
+		
+		main : Java!Main(
+		instruction <-p.instruction->reject(m | m.oclIsKindOf(Logo!ProcDeclaration))	
+		)
+}
+
+rule PenDown{
+	from o : Logo!PenDown
+	to out : Java!MethodeDeclaration (
+		name <- 'PenDown'
+		)
+}
+
+rule PenUp{
+	from o : Logo!PenUp
+	to out : Java!MethodeDeclaration (
+		name <- 'PenUp'
+		)
+}
+
+rule Clear{
+	from o : Logo!Clear
+	to out : Java!MethodeDeclaration (
+		name <- 'Clear'
+		)
+}
+
+rule Forward{
+	from o : Logo!Forward
+	to out : Java!MethodeDeclaration (
+		name <- 'Forward'
+		)
+}
+
+rule Right{
+	from o : Logo!Right
+	to out : Java!MethodeDeclaration (
+		name <- 'Right'
+		)
+}
+
+rule Left{
+	from o : Logo!left
+	to out : Java!MethodeDeclaration (
+		name <- 'Left'
+		)
+}
+
+rule Equals{
+	from o : Logo!Equals
+	to out : Java!Equals()
+}
+
+rule Lower{
+	from o : Logo!Lower
+	to out : Java!Lower()
+}
+
+rule Minus{
+	from o : Logo!Minus
+	to out : Java!Minus()
+}
+
+rule Mult{
+	from o : Logo!Mult
+	to out : Java!Mult()
+}
+
+rule Div{
+	from o : Logo!Div
+	to out : Java!Div()
+}
+
+rule Plus{
+	from o : Logo!Plus
+	to out : Java!Plus()
+}
+rule Greater{
+	from o : Logo!Greater
+	to out : Java!Greater()
+}
+rule For{
+	from o : Logo!For
+	to out : Java!For(
+		block<-o.block,
+		compteur<-o.expression
+	)
+}
+rule While{
+	from o : Logo!While
+	to out : Java!While
+}
